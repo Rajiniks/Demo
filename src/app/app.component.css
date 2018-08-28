@@ -65,9 +65,7 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
-#register
 
-}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
