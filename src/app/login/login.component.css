@@ -39,6 +39,11 @@ button:hover {
     padding: 10px 15px;
     background-color: #08202C;
     color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 6%;
     /* border:none;
     outline:none;
      background-color: Transparent;*/
