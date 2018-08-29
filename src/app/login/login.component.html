@@ -1,6 +1,7 @@
   <body background = 'https://upload.wikimedia.org/wikipedia/commons/8/81/Leucanthemum_vulgare_%27Filigran%27_Flower_2200px_edit1.jpg'>
-
+   <h1> Login Form </h1>
  <form action="action_page.php">
+
 <!-- 
 <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
@@ -14,7 +15,7 @@
     <label for="psw"><b>Password</b></label>&nbsp;&nbsp;
     <input type="password" placeholder="Enter Password" name="psw" required>
 <br>
-    <button type="submit" class='login'><b>Login</b></button>
+    <button class='login'><b>Login</b></button>
     <br>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me &nbsp;&nbsp;
@@ -22,8 +23,9 @@
   <!--<div class="container" style="background-color:#f1f1f1">-->
     <input type="reset" value="Reset" class="reset"/>  &nbsp;&nbsp;
     <br> Already have an account?
-    <div (click)="redirect(my-page)">Register</div>
-  <!--   <button id="register" type="submit" ><b>Register</b></button>  -->
+   <a  (click)="goToRegisterUser()" >Register</a>
+   <!--   <div (click)="redirect(my-page)">Register</div>
+   <button id="register" type="submit" ><b>Register</b></button>  -->
   </div>
 </form>
 </body>

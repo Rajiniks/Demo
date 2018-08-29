@@ -4,10 +4,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: `
- <!-- <app-register></app-register> -->
-   <app-login></app-login>
-  `})
+  templateUrl: './app.component.html'})
 export class AppComponent {
 
 }
