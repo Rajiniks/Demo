@@ -1,88 +1,59 @@
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-   /* color:white;*/
-}
-a{
-   color: black;
-}
-/* Full-width inputs */
-input[type=text], input[type=password] {
-    width: 40%;
-    padding: 12px 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid ;
 
-    box-sizing: border-box;
+h1 {
+	font-family: fantasy;
+	font-size: 3em;
+	border-bottom: 2px solid #33cccc;
+	border-right: 2px solid #33cccc;
+	width: 400px;
+	text-align: center;
+	-moz-box-shadow:4px 4px 5px #888888;
+	-ms-box-shadow: 4px 4px 5px #888888;
+	-webkit-box-shadow: 4px 4px 5px #888888;
+	-o-box-shadow: 4px 4px 5px #888888;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+    margin-left: 10px;
+}body {
+    height: 100vh;
+  }
+ h1:hover {
+  transform: scale(1.1);
 }
-
-/* Set a style for all buttons */
-button {
- /*    background-color: #008000;-- green
-  #4CAF50;*/
-  background-color: #08202C;
-    align-items: center;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 49%;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-    opacity: 0.8;
+.button {
+  border-radius: 2px;
+  background-color: #33cccc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 7px;
+  width: 340px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-/* Extra style for the cancel button (red) */
-.reset {
-   width: auto;
-    padding: 10px 15px;
-    background-color: #08202C;
-    color:white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 6%;
-    /* border:none;
-    outline:none;
-     background-color: Transparent;*/
-}
-/* Center the avatar image inside this container */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-/* Add padding to containers */
-.container {
-    padding: 200px;
+.button:hover span {
+  padding-right: 25px;
 }
 
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-}
-body{
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
